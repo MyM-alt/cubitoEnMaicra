@@ -1,0 +1,213 @@
+body {
+    background-image: url("../img/imagen-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minecraft-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minecraft-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Minecraft', monospace;
+    background-color: #8F8F8F;
+    color: #FFFFFF;
+    border: 2px solid #5C5C5C;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.minecraft-button:hover {
+    background-color: #B0B0B0;
+    border-color: #707070;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.minecraft-button:active {
+    background-color: #6E6E6E;
+    border-color: #404040;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.animaciones {
+    display: none;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#elementoAnimado {
+    width: 50px;
+    height: 50px;
+    background-image: url('steve.png');
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.animation-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: 'Minecraft', monospace;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.animation-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.animation-button:active {
+    background-color: #388e3c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+.animaciones img {
+    width: 100px;
+    height: 100px;
+}
+#zombieElement{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/minecraft-burning-baby-zombie-512x512.png);
+    background-size: cover;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+#colmena {
+    width: 40px;
+    height: 40px;
+    background-image: url('hive.png');
+    background-size: cover;
+    position: absolute;
+    right: 300px;
+    bottom: 200px;
+}
+#abeja {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    right: 300px;
+    bottom: 200px;
+    display: none;
+    z-index: 3;
+}
+#creeper {
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/creeper.png');
+    background-size: cover;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    z-index: 1;
+    display: none;
+}
+.explosion {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/explo.png');
+    background-size: cover;
+    position: absolute;
+    display: none;
+    z-index: 4;
+}
+#pantallaMuerte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+#deathText {
+    font-size: 36px;
+    color: white;
+    font-family: 'Minecraft', monospace;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#reiniciar {
+    padding: 15px 30px;
+    font-size: 24px;
+    font-family: 'Minecraft', monospace;
+    background-color: #8F8F8F;
+    color: #FFFFFF;
+    border: 2px solid #5C5C5C;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+#reiniciar:hover {
+    background-color: #B0B0B0;
+    border-color: #707070;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+#reiniciar:active {
+    background-color: #6E6E6E;
+    border-color: #404040;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+}
